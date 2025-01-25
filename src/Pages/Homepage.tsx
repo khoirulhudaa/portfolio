@@ -24,17 +24,11 @@ const Homepage: React.FC = () => {
         }
 
         {/* Humberger */}
-        <div onClick={() => setSidebar(true)} className='absolute z-[333] top-6 right-7 lg:hidden shadow-md w-[38px] h-[38px] rounded-md cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-100 flex flex-col items-center justify-center border border-slate-300'>
+        <div onClick={() => setSidebar(true)} className='absolute z-[99999] top-6 right-7 lg:hidden shadow-md w-[38px] h-[38px] rounded-md cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-100 flex flex-col items-center justify-center border border-slate-300'>
           <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
           <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
           <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
         </div>
-
-        {/* Sidebar */}
-        <div className={`w-[100vw] h-[100vh] bg-white p-7 z-[9099999] fixed top-0 ${sidebar ? 'left-0 duration-100' : 'left-[-100%] duration-100'}`}>
-
-        </div>
-
 
         {/* Nabar */}
         <nav className={`absolute left-0 top-0 z-[999999999] py-[20px] w-max lg:w-[100v] h-max lg:before:absolute lg:before:left-[62px] lg:before:top-[25px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full bg-transparent`}>
@@ -55,20 +49,20 @@ const Homepage: React.FC = () => {
                 <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
                   <li className='py-4' onClick={() => setSidebar(false)}>Home</li>
                 </a>
-                <a href="#product" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Product</li>
+                <a href="#products" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Products</li>
                 </a>
                 <a href="#linkedin" className='w-full mb-4 border-b border-b-slate-200'>
                   <li className='py-4' onClick={() => setSidebar(false)}>Linkedin</li>
                 </a>
+                <a href="#experience" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Experiences</li>
+                </a>
                 <a href="#github" className='w-full mb-4 border-b border-b-slate-200'>
                   <li className='py-4' onClick={() => setSidebar(false)}>Github</li>
                 </a>
-                <a href="#certification" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Certification</li>
-                </a>
-                <a href="#experince" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Pengalaman</li>
+                <a href="#certifications" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Certifications</li>
                 </a>
             </ul>
           </div>
@@ -82,19 +76,19 @@ const Homepage: React.FC = () => {
                 <li className='mr-10'>Languages</li>
               </a>
               <a href="#product">
-                <li className='mr-10'>Product</li>
+                <li className='mr-10'>Products</li>
               </a>
               <a href="#linkedin">
                 <li className='mr-10'>Linkedin</li>
               </a>
+              <a href="#experience">
+                <li className='mr-10'>Experiences</li>
+              </a>
               <a href="#github">
                 <li className='mr-10'>Github</li>
               </a>
-              <a href="#certification">
-                <li className='mr-10'>Certification</li>
-              </a>
-              <a href="#experince">
-                <li className='mr-10'>Pengalaman</li>
+              <a href="#certifications">
+                <li className='mr-10'>Certifications</li>
               </a>
             </ul>
           </div>
@@ -109,7 +103,7 @@ const Homepage: React.FC = () => {
         {/* Akhir Blur light */}
        
         <div id='home' className='relative z-[444] lg:px-16 px-6 pb-0 lg:pb-[80px] w-[94vw] lg:w-[100%] h-max lg:border-l-[3px] lg:lg:ml-12 mt-[50px] lg:mt-[90px] pt-16 border-white lg:before:absolute lg:before:left-[-30px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
-          <div className='fixed top-0 right-0 overflow-hidden bg-transparent w-[100vw] h-[100vh]'>
+          <div className='fixed top-0 right-0 overflow-hidden bg-transparent w-[100vw] h-[80vh]'>
             <div id='asteroid1a'></div>
             <div id='asteroid2a'></div>
             <div id='asteroid3a'></div>
@@ -154,7 +148,7 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
-        <div id='product' className='relative flex flex-col items-center z-[4444] mt-[-20px] pt-[0px] pb-[0px] w-[100%] h-max lg:border-l-[3px] ml-0 lg:ml-12 border-white'>
+        <div id='products' className='relative flex flex-col items-center z-[4444] mt-[-20px] pt-[0px] pb-[0px] w-[100%] h-max lg:border-l-[3px] ml-0 lg:ml-12 border-white'>
             <img src={SquareLine} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-420px] scale-[0.5]' />
             <div className='w-[150px] absolute top-[-60px] left-0 h-[300px] lg:inline hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
@@ -433,7 +427,7 @@ const Homepage: React.FC = () => {
           </div>
           <img src={Square3} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-450px] scale-[0.5]' />
 
-          <div className='relative w-[100vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-10 z-40 overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 lg:rounded-[12px] border border-slate-200 h-max'>
+          <div className='relative w-[100vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-10 z-40 overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-14 lg:rounded-[12px] border border-slate-200 h-max'>
             <h3 className='text-slate-800 text-[15px] lg:text-[18px] lg:mb-4 w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
             
             <div className='w-full border border-slate-300 rounded-lg p-4 bg-white mt-5'>
@@ -481,7 +475,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='experience' className='relative flex items-center h-max lg:h-[400px] lg:mt-0 mt-10 w-[90vw] ml-5 lg:w-full'>
+          <div id='experience' className='relative flex items-center h-max lg:h-[400px] lg:mt-0 mt-10 w-[90vw] ml-5 lg:ml-0 lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -497,7 +491,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* two */}
-          <div className='relative flex items-center h-max lg:h-[400px] w-[90vw] ml-5 lg:w-full'>
+          <div className='relative flex items-center h-max lg:h-[400px] w-[90vw] ml-5 lg:ml-0 lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -580,7 +574,7 @@ const Homepage: React.FC = () => {
 
           <img src={Earth} alt="earth" className='absolute right-[-700px] scale-[2] opacity-[0.2] top-[25%]' />
 
-          <div className='relative z-[4444] pb-[0px] px-0 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[16px] lg:ml-[0px]'>
+          <div className='relative z-[4444] pb-[0px] px-0 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[16px] lg:ml-[-17px]'>
             <div className='w-max mb-3 border border-white rounded-full text-white flex lg:ml-0 items-center text-center px-5 py-1'>
               Certificates
             </div>
@@ -589,7 +583,7 @@ const Homepage: React.FC = () => {
           </div>
 
           <div className='w-full flex lg:px-0 px-5 lg:ml-12 flex-wrap'>
-            <div id='certification' className='relative flex items-center h-max lg:h-[320px] lg:mt-0 mt-10 w-full lg:w-[45%] mb-8 lg:mb-14 lg:mr-8 p-6 border border-white rounded-[20px]'>
+            <div id='certifications' className='relative flex items-center h-max lg:h-[320px] lg:mt-0 mt-10 w-full lg:w-[45%] mb-8 lg:mb-14 lg:mr-8 p-6 border border-white rounded-[20px]'>
               <div className='w-full relative left-[-1px] lg:left-[-100px] mt-6 lg:mt-8'>
                 <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
                   <img src={Winner} alt="winner-icon" className='w-[30px]' />
@@ -685,7 +679,7 @@ const Homepage: React.FC = () => {
                 <div onClick={() => {
                   setIsModal(true)
                   setSelectImage(JWD)
-                  setText(`It's a certification training program for Junior Web Developers based on national competencies and one of the eight academies under the Digital Talent Scholarship (DTS) in 2022.`)}} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-6 lg:mb-10 hover:brightness-[90%] active:scale-[0.99] text-white flex items-center w-max border border-white rounded-lg py-2 px-3'>Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </div>
+                  setText(`It's a certifications training program for Junior Web Developers based on national competencies and one of the eight academies under the Digital Talent Scholarship (DTS) in 2022.`)}} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-6 lg:mb-10 hover:brightness-[90%] active:scale-[0.99] text-white flex items-center w-max border border-white rounded-lg py-2 px-3'>Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </div>
               </div>
             </div>
           </div>
